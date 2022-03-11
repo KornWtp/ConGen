@@ -7,11 +7,11 @@ pip install -e .
 ``` 
 
 ## Usage
-### Train ConGen
+### Train
 For example,
 ```bash
 python main.py \
-    --model_save_path "your-model-path" \
+    --model_save_path "your-output-model-path" \
     --teacher_model_name_or_path princeton-nlp/unsup-simcse-roberta-large \
     --student_model_name_or_path nreimers/BERT-Tiny_L-2_H-128_A-2 \
     --train_dataset_path "your-train-data-path" \
