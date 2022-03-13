@@ -49,39 +49,35 @@ parser.add_argument("--student_model_name_or_path",
 					help="The student model checkpoint for weights initialization.")
 parser.add_argument("--train_batch_size", 
 					type=int, 
-					default=32,
+					default=128,
 					help="Batch size for training.")
 parser.add_argument("--eval_batch_size", 
 					type=int, 
-					default=32,
+					default=128,
 					help="Batch size for evaluation.")
-parser.add_argument("-- ",
-					type=int,
-					default=16,
-					help="Batch size at inference.")
 parser.add_argument("--max_seq_length",
 					type=int,
 					default=128,
 					help="Student model max. lengths for inputs (number of word pieces).")							
 parser.add_argument("--num_epochs",
 					type=int,
-					default=3,
-					help="Total number of training epochs to perform.")
+					default=20,
+					help="Total number of training epochs.")
 parser.add_argument("--learning_rate",
 					type=float,
-					default=5e-5,
-					help="The initial learning rate for Adam.")
+					default=5e-4,
+					help="The initial learning rate for AdamW.")
 parser.add_argument("--student_temp",
 					type=float,
-					default=0.1,
-					help="Temperature for student encoder.")
+					default=0.05,
+					help="Temperature for the student encoder.")
 parser.add_argument("--teacher_temp",
 					type=float,
 					default=0.05,
-					help="Distillation temperature.")
+					help="Temperature for the teacher encoder.")
 parser.add_argument("--queue_size",
 					type=int,
-					default=1000,
+					default=16534,
 					help="The size of instance queue")
 parser.add_argument("--gpu_device",
 					type=int,
@@ -94,11 +90,7 @@ parser.add_argument("--early_stopping_patience",
 parser.add_argument("--seed",
 					type=int,
 					default=1000,
-					help="The seed value")					
-parser.add_argument("--queue_random",
-					type=int,
-					default=0,
-					help="Random instance queue or not")	
+					help="The random seed value")					
 
 args = parser.parse_args()
 print(args)
@@ -142,12 +134,8 @@ logging.info(f"Loading student model: {args.student_model_name_or_path}")
 student_word_embedding_model = models.Transformer(args.student_model_name_or_path, max_seq_length=args.max_seq_length)
 student_dimension = student_word_embedding_model.get_word_embedding_dimension()
 student_pooling_model = models.Pooling(student_dimension)
-
-if teacher_dimension != student_dimension:
-	dense_model = models.Dense(in_features=student_dimension, out_features=teacher_dimension, activation_function=nn.Tanh())
-	student_model = SentenceTransformer(modules=[student_word_embedding_model, student_pooling_model, dense_model])
-else:
-	student_model = SentenceTransformer(modules=[student_word_embedding_model, student_pooling_model])
+dense_model = models.Dense(in_features=student_dimension, out_features=teacher_dimension, activation_function=nn.Tanh())
+student_model = SentenceTransformer(modules=[student_word_embedding_model, student_pooling_model, dense_model])
 
 logging.info(f"Create instance queue")
 text_in_queue = np.random.RandomState(16349).choice(sents1, args.queue_size, replace=False)
