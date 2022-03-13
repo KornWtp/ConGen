@@ -166,12 +166,12 @@ rep_instance_queue_edited = teacher_model.encode(instance_queue,
 									normalize_embeddings=True, 
 									device=device)
 
-training_loss = losses.ConGenLoss(instanceQ=rep_instance_queue_edited,  
+training_loss = losses.ConGenLoss(instanceQ_encoded=rep_instance_queue_edited,  
 								model=student_model,
 								student_temp=args.student_temp, 
 								teacher_temp=args.teacher_temp)
 
-del instance_queue, rep_en_texts, teacher_model, rep_instance_queue_edited					
+del instance_queue, sents1_encodedclear, teacher_model, rep_instance_queue_edited					
 
 warmup_steps = math.ceil(len(train_dataloader) * args.num_epochs * 0.1)  # 10% of train data for warm-up
 evaluation_steps = 512
