@@ -41,7 +41,7 @@ class ConGenLoss(nn.Module):
         # Apply temperatures for soft-labels
         T_ref = F.softmax(T_ref/self.teacher_temp, dim=1)
         S_con = S_con / self.student_temp
-        S_gen = S_con / self.student_temp
+        S_gen = S_gen / self.student_temp
         
 
         # loss computation, use log_softmax for stable computation
