@@ -161,17 +161,17 @@ for s1, s2, s1_encoded in zip(sents1, sents2, sents1_encoded):
 		instance_queue.append(s1)
 train_dataloader = DataLoader(train_samples, shuffle=True, batch_size=args.train_batch_size)
 
-rep_instance_queue_edited = teacher_model.encode(instance_queue, 
+instance_queue_encoded = teacher_model.encode(instance_queue, 
 									convert_to_tensor=True,
 									normalize_embeddings=True, 
 									device=device)
 
-training_loss = losses.ConGenLoss(instanceQ_encoded=rep_instance_queue_edited,  
+training_loss = losses.ConGenLoss(instanceQ_encoded=instance_queue_encoded,  
 								model=student_model,
 								student_temp=args.student_temp, 
 								teacher_temp=args.teacher_temp)
 
-del instance_queue, sents1_encoded, teacher_model, rep_instance_queue_edited					
+del instance_queue, sents1_encoded, teacher_model, instance_queue_encoded					
 
 warmup_steps = math.ceil(len(train_dataloader) * args.num_epochs * 0.1)  # 10% of train data for warm-up
 evaluation_steps = 512
