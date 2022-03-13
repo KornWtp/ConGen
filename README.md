@@ -3,6 +3,7 @@ This repository contains codes and scripts for the paper ConGen: Unsupervised Co
 
 ## Installation
 ```
+git clone https://github.com/KornWtp/ConGen.git
 pip install -e .
 ``` 
 
