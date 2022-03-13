@@ -5,10 +5,9 @@ python src/main.py \
     --model_save_path "your-output-model-path" \
     --teacher_model_name_or_path princeton-nlp/unsup-simcse-roberta-large \
     --student_model_name_or_path nreimers/BERT-Tiny_L-2_H-128_A-2 \
-    --train_dataset_path "your-train-data-path" \
-    --dev_dataset_path "your-validation-data-path" \
+    --train_data_path "your-train-data-path" \
+    --dev_data_path "your-validation-data-path" \
     --train_batch_size 128 \
-    --inference_batch_size 128 \
     --eval_batch_size 128 \
     --max_seq_length 128 \
     --num_epochs 20 \
