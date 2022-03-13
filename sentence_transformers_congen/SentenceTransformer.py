@@ -1,4 +1,4 @@
-# This code our modify from https://github.com/UKPLab/sentence-transformers/blob/master/sentence_transformers/SentenceTransformer.py 
+# This code modified from https://github.com/UKPLab/sentence-transformers/blob/master/sentence_transformers/SentenceTransformer.py 
 
 import json
 import logging 
@@ -532,7 +532,7 @@ class SentenceTransformer(nn.Sequential):
             sents2_features = sentence_features[1]
             
             return sents1_features, sents2_features, sents1_encoded
-        except:
+        except: # original preprocessing
             labels = []
             for example in batch:
                 for idx, text in enumerate(example.texts):
