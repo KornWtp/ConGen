@@ -171,7 +171,7 @@ training_loss = losses.ConGenLoss(instanceQ_encoded=rep_instance_queue_edited,
 								student_temp=args.student_temp, 
 								teacher_temp=args.teacher_temp)
 
-del instance_queue, sents1_encodedclear, teacher_model, rep_instance_queue_edited					
+del instance_queue, sents1_encoded, teacher_model, rep_instance_queue_edited					
 
 warmup_steps = math.ceil(len(train_dataloader) * args.num_epochs * 0.1)  # 10% of train data for warm-up
 evaluation_steps = 512
