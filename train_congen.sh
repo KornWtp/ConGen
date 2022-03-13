@@ -1,7 +1,7 @@
 #!/bin/bash
 
 CUDA_VISIBLE_DEVICES=$1
-python src/main.py \
+python main.py \
     --model_save_path "your-output-model-path" \
     --teacher_model_name_or_path princeton-nlp/unsup-simcse-roberta-large \
     --student_model_name_or_path nreimers/BERT-Tiny_L-2_H-128_A-2 \
