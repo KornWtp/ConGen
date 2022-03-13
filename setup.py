@@ -13,8 +13,6 @@ setup(
     description="Sentence representation with SBERT",
     long_description=readme,
     long_description_content_type="text/markdown",
-    url="https://github.com/KornWtp/ConGen",
-    download_url="https://github.com/KornWtp/ConGen.git",
     packages=find_packages(),
     install_requires=[
         "torch==1.8.1",
