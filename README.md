@@ -75,3 +75,143 @@ python evaluation.py \
     --task_set sts \
     --mode test
 ```
+
+## Results
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-nbj5{background-color:#FFF;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-7btt">Model</th>
+    <th class="tg-7btt">STS-12</th>
+    <th class="tg-7btt"><span style="font-style:normal">STS-13</span></th>
+    <th class="tg-7btt"><span style="font-style:normal">STS-14</span></th>
+    <th class="tg-7btt"><span style="font-style:normal">STS-15</span></th>
+    <th class="tg-7btt"><span style="font-style:normal">STS-16</span></th>
+    <th class="tg-7btt"><span style="font-style:normal">STS-B</span></th>
+    <th class="tg-7btt">SICK-R</th>
+    <th class="tg-7btt">Avg.</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">BERT-Tiny</td>
+    <td class="tg-c3ow">72.18</td>
+    <td class="tg-nbj5"><span style="background-color:#FFF">81.12</span></td>
+    <td class="tg-c3ow">75.45</td>
+    <td class="tg-c3ow">83.22</td>
+    <td class="tg-c3ow">77.89</td>
+    <td class="tg-c3ow">79.03</td>
+    <td class="tg-c3ow">69.05</td>
+    <td class="tg-c3ow">76.85</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">BERT-Mini</td>
+    <td class="tg-c3ow">74.17</td>
+    <td class="tg-c3ow">82.69</td>
+    <td class="tg-c3ow">76.58</td>
+    <td class="tg-c3ow">84.30</td>
+    <td class="tg-c3ow">78.23</td>
+    <td class="tg-c3ow">80.84</td>
+    <td class="tg-c3ow">69.82</td>
+    <td class="tg-c3ow">78.09</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Tiny-BERT-L4</td>
+    <td class="tg-c3ow">74.3</td>
+    <td class="tg-c3ow">83.07</td>
+    <td class="tg-c3ow">77.37</td>
+    <td class="tg-c3ow">84.70</td>
+    <td class="tg-c3ow">79.06</td>
+    <td class="tg-c3ow">80.99</td>
+    <td class="tg-c3ow">70.26</td>
+    <td class="tg-c3ow">78.54</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">MiniLM-L3</td>
+    <td class="tg-c3ow">74.00</td>
+    <td class="tg-c3ow">82.93</td>
+    <td class="tg-c3ow">76.58</td>
+    <td class="tg-c3ow">84.35</td>
+    <td class="tg-c3ow">78.57</td>
+    <td class="tg-c3ow">81.00</td>
+    <td class="tg-c3ow">70.09</td>
+    <td class="tg-c3ow">78.22</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal">MiniLM-L6</span></td>
+    <td class="tg-c3ow">75.06</td>
+    <td class="tg-c3ow">83.86</td>
+    <td class="tg-c3ow">77.29</td>
+    <td class="tg-c3ow">85.01</td>
+    <td class="tg-c3ow">79.67</td>
+    <td class="tg-c3ow">81.92</td>
+    <td class="tg-c3ow">70.89</td>
+    <td class="tg-c3ow">79.10</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">BERT-Small</td>
+    <td class="tg-c3ow">74.50</td>
+    <td class="tg-c3ow">83.58</td>
+    <td class="tg-c3ow">77.29</td>
+    <td class="tg-c3ow">84.83</td>
+    <td class="tg-c3ow">79.72</td>
+    <td class="tg-c3ow">81.93</td>
+    <td class="tg-c3ow">70.55</td>
+    <td class="tg-c3ow">78.91</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal">MiniLM-L12</span></td>
+    <td class="tg-c3ow">75.25</td>
+    <td class="tg-c3ow">84.61</td>
+    <td class="tg-c3ow">78.27</td>
+    <td class="tg-c3ow">85.51</td>
+    <td class="tg-c3ow">80.52</td>
+    <td class="tg-c3ow">82.32</td>
+    <td class="tg-c3ow">71.32</td>
+    <td class="tg-c3ow">79.68</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-weight:400;font-style:normal">Tiny-BERT-L6</span></td>
+    <td class="tg-c3ow">75.53</td>
+    <td class="tg-c3ow">84.76</td>
+    <td class="tg-c3ow">78.33</td>
+    <td class="tg-c3ow">85.72</td>
+    <td class="tg-c3ow">80.42</td>
+    <td class="tg-c3ow">82.25</td>
+    <td class="tg-c3ow">71.12</td>
+    <td class="tg-c3ow">79.73</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">BERT-base</td>
+    <td class="tg-c3ow">75.58</td>
+    <td class="tg-c3ow">85.13</td>
+    <td class="tg-c3ow">78.54</td>
+    <td class="tg-c3ow">85.75</td>
+    <td class="tg-c3ow">81.12</td>
+    <td class="tg-c3ow">82.81</td>
+    <td class="tg-c3ow">71.47</td>
+    <td class="tg-c3ow">80.06</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">RoBERTa-base</td>
+    <td class="tg-c3ow">75.32</td>
+    <td class="tg-c3ow">84.56</td>
+    <td class="tg-c3ow">77.26</td>
+    <td class="tg-c3ow">85.33</td>
+    <td class="tg-c3ow">81.34</td>
+    <td class="tg-c3ow">82.67</td>
+    <td class="tg-c3ow">72.00</td>
+    <td class="tg-c3ow">79.78</td>
+  </tr>
+</tbody>
+</table>
