@@ -6,7 +6,7 @@ This repository contains codes and scripts for the paper [ConGen: Unsupervised C
 pip install -e .
 ``` 
 
-## Models in paper (Small to Large)
+## Our models (Small to Large)
 - [ConGen-BERT-Tiny]()
 - [ConGen-BERT-Mini]()
 - [ConGen-TinyBERT-L4]()
@@ -45,18 +45,18 @@ The full model parameters:
 |Multilingual-MiniLM-L12| 0.05  | 0.07  | 65536| 3e-4|  
 
 
+### Train your own model
+Please set the model's parameter before training.
+```bash
+>> bash train_congen.sh
+```
+
 For finetuning model parameters: 
 ```
 learning_rate_all=(3e-4 5e-4 1e-4 3e-5 5e-5 1e-5)
 queue_sizes=(262144 131072 65536 16384 1024)
 teacher_temps=(0.01 0.03 0.05 0.07 0.09 0.1)
 student_temps=(0.01 0.03 0.05 0.07 0.09 0.1)
-```
-
-### Train
-Please set the model's parameter before training.
-```bash
->> bash train_congen.sh
 ```
 
 ### Evaluation
