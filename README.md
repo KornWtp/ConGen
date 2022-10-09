@@ -76,7 +76,150 @@ python evaluation.py \
     --mode test
 ```
 
-## Results
+## Main results
+In our paper, we average score over three models and shown as follows:
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-7btt" rowspan="2">Methods</th>
+    <th class="tg-7btt" colspan="10">Semantic Textual Similarity (STS) average scores</th>
+  </tr>
+  <tr>
+    <th class="tg-7btt">BERT<br>Tiny</th>
+    <th class="tg-7btt"><span style="font-weight:700;font-style:normal">BERT</span><br><span style="font-weight:700;font-style:normal">Mini</span></th>
+    <th class="tg-7btt"><span style="font-weight:700;font-style:normal">Tiny</span><br><span style="font-weight:700;font-style:normal">BERT-L4</span></th>
+    <th class="tg-7btt"><span style="font-weight:700;font-style:normal">MiniLM</span><br><span style="font-weight:700;font-style:normal">L3</span></th>
+    <th class="tg-7btt"><span style="font-weight:700;font-style:normal">MiniLM</span><br><span style="font-weight:700;font-style:normal">L6</span></th>
+    <th class="tg-7btt"><span style="font-weight:700;font-style:normal">BERT</span><br>Small</th>
+    <th class="tg-7btt"><span style="font-weight:700;font-style:normal">MiniLM</span><br><span style="font-weight:700;font-style:normal">L12</span></th>
+    <th class="tg-7btt"><span style="font-weight:700;font-style:normal">Tiny</span><br><span style="font-weight:700;font-style:normal">BERT-L6</span></th>
+    <th class="tg-7btt"><span style="font-weight:700;font-style:normal">BERT</span><br><span style="font-weight:700;font-style:normal">Base</span></th>
+    <th class="tg-7btt"><span style="font-weight:700;font-style:normal">RoBERTa</span><br><span style="font-weight:700;font-style:normal">Base</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">#Param (M)</td>
+    <td class="tg-c3ow">4</td>
+    <td class="tg-c3ow">11</td>
+    <td class="tg-c3ow">14</td>
+    <td class="tg-c3ow">17</td>
+    <td class="tg-c3ow">22</td>
+    <td class="tg-c3ow">29</td>
+    <td class="tg-c3ow">33</td>
+    <td class="tg-c3ow">67</td>
+    <td class="tg-c3ow">109</td>
+    <td class="tg-c3ow">125</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr" colspan="11"><span style="font-style:normal">Finetuning-based</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fymr">Teacher</td>
+    <td class="tg-f8tv" colspan="10"><span style="font-weight:400">SimCSE-Unsup-RoBERTa$_\text{large}$: 78.90</span>$^\text{\ding{61}}$</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Sup-SimCSE$^\text{\ding{168}}$</td>
+    <td class="tg-8bgf">72.35</td>
+    <td class="tg-8bgf">76.52</td>
+    <td class="tg-8bgf">78.19</td>
+    <td class="tg-8bgf">76.49</td>
+    <td class="tg-8bgf">78.86</td>
+    <td class="tg-8bgf">78.59</td>
+    <td class="tg-8bgf">80.48</td>
+    <td class="tg-8bgf">81.23</td>
+    <td class="tg-8bgf">81.57</td>
+    <td class="tg-8bgf">82.52</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Unsup-SimCSE</td>
+    <td class="tg-c3ow">64.47</td>
+    <td class="tg-c3ow">65.94</td>
+    <td class="tg-c3ow">67.91</td>
+    <td class="tg-c3ow">55.10</td>
+    <td class="tg-c3ow">59.15</td>
+    <td class="tg-c3ow">69.13</td>
+    <td class="tg-c3ow">67.90</td>
+    <td class="tg-c3ow">73.67</td>
+    <td class="tg-c3ow">76.25</td>
+    <td class="tg-c3ow">77.10</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr" colspan="11">Distillation-based</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">L2 </td>
+    <td class="tg-c3ow">73.32</td>
+    <td class="tg-c3ow">76.07</td>
+    <td class="tg-c3ow">77.03</td>
+    <td class="tg-c3ow">76.66</td>
+    <td class="tg-c3ow">77.51</td>
+    <td class="tg-c3ow">77.30</td>
+    <td class="tg-c3ow">78.79</td>
+    <td class="tg-c3ow">78.95</td>
+    <td class="tg-c3ow">78.97</td>
+    <td class="tg-c3ow"><span style="font-weight:400;font-style:normal">79.00</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Making </td>
+    <td class="tg-c3ow">70.76</td>
+    <td class="tg-c3ow">74.42</td>
+    <td class="tg-c3ow">76.39</td>
+    <td class="tg-c3ow">75.34</td>
+    <td class="tg-c3ow">74.74</td>
+    <td class="tg-c3ow">76.92</td>
+    <td class="tg-c3ow">76.91</td>
+    <td class="tg-c3ow">78.67</td>
+    <td class="tg-c3ow">78.07</td>
+    <td class="tg-c3ow">79.06</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">SKD</td>
+    <td class="tg-c3ow">68.83</td>
+    <td class="tg-c3ow">72.02</td>
+    <td class="tg-c3ow">73.05</td>
+    <td class="tg-c3ow">72.66</td>
+    <td class="tg-c3ow">73.59</td>
+    <td class="tg-c3ow">75.06</td>
+    <td class="tg-c3ow">74.58</td>
+    <td class="tg-c3ow">77.62</td>
+    <td class="tg-c3ow">78.05</td>
+    <td class="tg-c3ow">77.44</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">CKD</td>
+    <td class="tg-c3ow">76.19</td>
+    <td class="tg-c3ow">76.59</td>
+    <td class="tg-c3ow">77.48</td>
+    <td class="tg-c3ow">77.14</td>
+    <td class="tg-c3ow">77.90</td>
+    <td class="tg-c3ow">76.97</td>
+    <td class="tg-c3ow">77.92</td>
+    <td class="tg-c3ow">78.29</td>
+    <td class="tg-c3ow">78.54</td>
+    <td class="tg-c3ow">78.34</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr" colspan="11">Our propose method</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><span style="font-style:normal">DVD</span></td>
+    <td class="tg-7btt">76.85</td>
+    <td class="tg-7btt">78.09</td>
+    <td class="tg-7btt">78.54</td>
+    <td class="tg-7btt">78.22</td>
+    <td class="tg-7btt">79.10</td>
+    <td class="tg-7btt">78.91</td>
+    <td class="tg-7btt">79.68</td>
+    <td class="tg-7btt">79.73</td>
+    <td class="tg-7btt">80.06</td>
+    <td class="tg-7btt">79.78</td>
+  </tr>
+</tbody>
+</table>
+
+
+## Full results
 <table class="tg">
 <thead>
   <tr>
