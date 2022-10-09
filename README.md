@@ -6,14 +6,30 @@ This repository contains codes and scripts for the paper ConGen: Unsupervised Co
 pip install -e .
 ``` 
 
+## Models in paper (Small to Large)
+- [ConGen-BERT-Tiny]()
+- [ConGen-BERT-Mini]()
+- [ConGen-TinyBERT-L4]()
+- [ConGen-MiniLM-L3]()
+- [ConGen-MiniLM-L6]()
+- [ConGen-BERT-Small]()
+- [ConGen-MiniLM-L12]()
+- [ConGen-TinyBERT-L6]()
+- [ConGen-BERT-base]()
+- [ConGen-RoBERTa-base]()
+- [ConGen-Multilingual-DistilBERT]()
+- [ConGen-Multilingual-MiniLM-L12]()
+
 ## Usage
 ### Training data
 We use the training data from [BSL](https://drive.google.com/file/d/19O2NArJz_RlVNNGRbBnnWxNMW-7HaFZ8/view?usp=sharing) (Access is requested). 
 
 ### Development data
-We use sts-b development set [from sentence transformer](https://sbert.net/datasets/stsbenchmark.tsv.gz).
+We use sts-b development set from [sentence transformer](https://sbert.net/datasets/stsbenchmark.tsv.gz).
 
 ### Parameters
+The full model parameters:
+
 
 
 For finetuning model parameters: 
@@ -25,6 +41,7 @@ student_temps=(0.01 0.03 0.05 0.07 0.09)
 ```
 
 ### Train
+Please set the model parameter before training. 
 ```bash
 >> bash train_congen.sh
 ```
