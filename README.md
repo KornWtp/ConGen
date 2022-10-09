@@ -76,7 +76,7 @@ python evaluation.py \
     --mode test
 ```
 
-## Main results
+## Main results - STS
 In our paper, we average score over three models and shown as follows:
 <table class="tg">
 <thead>
@@ -116,10 +116,10 @@ In our paper, we average score over three models and shown as follows:
   </tr>
   <tr>
     <td class="tg-fymr">Teacher</td>
-    <td class="tg-f8tv" colspan="10"><span style="font-weight:400">SimCSE-Unsup-RoBERTa$_\text{large}$: 78.90</span>$^\text{\ding{61}}$</td>
+    <td class="tg-f8tv" colspan="10"><span style="font-weight:400">SimCSE-Unsup-RoBERTa-large: 78.90</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Sup-SimCSE$^\text{\ding{168}}$</td>
+    <td class="tg-0pky">Sup-SimCSE</td>
     <td class="tg-8bgf">72.35</td>
     <td class="tg-8bgf">76.52</td>
     <td class="tg-8bgf">78.19</td>
@@ -203,7 +203,7 @@ In our paper, we average score over three models and shown as follows:
     <td class="tg-fymr" colspan="11">Our propose method</td>
   </tr>
   <tr>
-    <td class="tg-0pky"><span style="font-style:normal">DVD</span></td>
+    <td class="tg-0pky"><span style="font-style:normal">ConGen</span></td>
     <td class="tg-7btt">76.85</td>
     <td class="tg-7btt">78.09</td>
     <td class="tg-7btt">78.54</td>
@@ -217,7 +217,6 @@ In our paper, we average score over three models and shown as follows:
   </tr>
 </tbody>
 </table>
-
 
 ## Full results
 <table class="tg">
