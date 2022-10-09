@@ -29,15 +29,28 @@ We use sts-b development set from [sentence transformer](https://sbert.net/datas
 
 ### Parameters
 The full model parameters:
-
+| Models  | Teacher Temp | Student Temp | Queue Size | Learning Rate |   
+| --------------------- | ----- | ----- | -----| ----|
+|BERT-Tiny              | 0.05  | 0.05  | 16384| 5e-4|
+|BERT-Mini              | 0.05  | 0.07  | 16384| 3e-4| 
+|Tiny-BERT-L4           | 0.05  | 0.05  | 65536| 1e-4| 
+|MiniLM-L3              | 0.05  | 0.07  | 16384| 5e-4| 
+|MiniLM-L6              | 0.05  | 0.07  | 65536| 3e-4|   
+|BERT-Small             | 0.05  | 0.07  | 65536| 3e-4|  
+|MiniLM-L12             | 0.05  | 0.07  | 16384| 5e-5|  
+|Tiny-BERT-L6           | 0.05  | 0.07  | 65536| 5e-5| 
+|BERT-base              | 0.05  | 0.07  | 65536| 5e-5| 
+|RoBERTa-base           |  0.1  |  0.1  |  1024| 5e-5| 
+|Multilingual-DistilBERT| 0.05  | 0.07  | 65536| 3e-4|  
+|Multilingual-MiniLM-L12| 0.05  | 0.07  | 65536| 3e-4|  
 
 
 For finetuning model parameters: 
 ```
-learning_rate_all=(3e-4 5e-4 1e-4 1e-5)
+learning_rate_all=(3e-4 5e-4 1e-4 3e-5 5e-5 1e-5)
 queue_sizes=(262144 131072 65536 16384 1024)
-teacher_temps=(0.01 0.03 0.05 0.07 0.09)
-student_temps=(0.01 0.03 0.05 0.07 0.09)
+teacher_temps=(0.01 0.03 0.05 0.07 0.09 0.1)
+student_temps=(0.01 0.03 0.05 0.07 0.09 0.1)
 ```
 
 ### Train
