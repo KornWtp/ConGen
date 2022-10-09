@@ -1,5 +1,5 @@
 # ConGen
-This repository contains codes and scripts for the paper ConGen: Unsupervised Control and Generalization Distillation For Sentence Representation (Finding of EMNLP 2022).
+This repository contains codes and scripts for the paper [ConGen: Unsupervised Control and Generalization Distillation For Sentence Representation (Finding of EMNLP 2022)]().
 
 ## Installation
 ```
