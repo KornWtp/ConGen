@@ -11,17 +11,17 @@ pip install -e .
 
 ## Our models (Small to Large)
 - [ConGen-BERT-Tiny](https://huggingface.co/kornwtp/ConGen-BERT-Tiny)
-- [ConGen-BERT-Mini]()
-- [ConGen-TinyBERT-L4]()
-- [ConGen-MiniLM-L3]()
-- [ConGen-MiniLM-L6]()
-- [ConGen-BERT-Small]()
-- [ConGen-MiniLM-L12]()
-- [ConGen-TinyBERT-L6]()
-- [ConGen-BERT-base]()
-- [ConGen-RoBERTa-base]()
-- [ConGen-Multilingual-DistilBERT]()
-- [ConGen-Multilingual-MiniLM-L12]()
+- [ConGen-BERT-Mini](https://huggingface.co/kornwtp/ConGen-BERT-Mini)
+- [ConGen-TinyBERT-L4](https://huggingface.co/kornwtp/ConGen-TinyBERT-L4)
+- [ConGen-MiniLM-L3](https://huggingface.co/kornwtp/ConGen-MiniLM-L3)
+- [ConGen-MiniLM-L6](https://huggingface.co/kornwtp/ConGen-MiniLM-L6)
+- [ConGen-BERT-Small](https://huggingface.co/kornwtp/ConGen-BERT-Small)
+- [ConGen-MiniLM-L12](https://huggingface.co/kornwtp/ConGen-MiniLM-L12)
+- [ConGen-TinyBERT-L6](https://huggingface.co/kornwtp/ConGen-TinyBERT-L6)
+- [ConGen-BERT-base](https://huggingface.co/kornwtp/ConGen-BERT-base)
+- [ConGen-RoBERTa-base](https://huggingface.co/kornwtp/ConGen-RoBERTa-base)
+- [ConGen-Multilingual-DistilBERT](https://huggingface.co/kornwtp/ConGen-Multilingual-DistilBERT)
+- [ConGen-Multilingual-MiniLM-L12](https://huggingface.co/kornwtp/ConGen-Multilingual-MiniLM-L12)
 
 ## Usage
 ### Training data
