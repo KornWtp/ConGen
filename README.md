@@ -10,7 +10,7 @@ pip install -e .
 ``` 
 
 ## Our models (Small to Large)
-- [ConGen-BERT-Tiny](kornwtp/ConGen-BERT-Tiny)
+- [ConGen-BERT-Tiny](https://huggingface.co/kornwtp/ConGen-BERT-Tiny)
 - [ConGen-BERT-Mini]()
 - [ConGen-TinyBERT-L4]()
 - [ConGen-MiniLM-L3]()
