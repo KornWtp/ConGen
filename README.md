@@ -62,7 +62,7 @@ teacher_temps=(0.01 0.03 0.05 0.07 0.09 0.1)
 student_temps=(0.01 0.03 0.05 0.07 0.09 0.1)
 ```
 
-### Evaluation
+# Evaluation
 Our evaluation code for sentence embeddings is based on a modified version of [SentEval](https://github.com/facebookresearch/SentEval) and [SimCSE](https://github.com/princeton-nlp/SimCSE).
 
 Before evaluation, please download the evaluation datasets by running
