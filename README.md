@@ -1,5 +1,5 @@
 # ConGen
-Implementation of ConGen: [Unsupervised Control and Generalization Distillation For Sentence Representation (Finding of EMNLP 2022)]().
+Implementation of [ConGen: Unsupervised Control and Generalization Distillation For Sentence Representation (Finding of EMNLP 2022)](https://github.com/KornWtp/ConGen/blob/main/ConGen__Unsupervised_Control_and_Generalization_Distillation_For_Sentence_Representation.pdf).
 
 
 ## Installation
