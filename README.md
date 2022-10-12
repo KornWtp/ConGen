@@ -71,10 +71,10 @@ cd SentEval/data/downstream/
 bash download_dataset.sh
 ```
 
-## Notebook
+## Evaluation - Notebook
 Please see https://github.com/KornWtp/ConGen/tree/main/notebook
 
-## Python
+## Evaluation - Python
 Then come back to the root directory, you can evaluate any `sentence transformers` models using SimCSE evaluation code. For example,
 ```bash
 python evaluation.py \
