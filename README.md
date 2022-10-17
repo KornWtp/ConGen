@@ -25,7 +25,7 @@ pip install -e .
 
 ## Usage
 ### Training data
-We use the training data from [back-translation NLI](https://drive.google.com/file/d/1HeqsEChDr7i_kxbdJvmVaRMSFKDRnFBY/view?usp=sharing)
+We use the training data from [back-translation NLI](https://drive.google.com/file/d/1HeqsEChDr7i_kxbdJvmVaRMSFKDRnFBY/view?usp=sharing)\n
 And multilingual we use the training data from [BSL](https://drive.google.com/file/d/19O2NArJz_RlVNNGRbBnnWxNMW-7HaFZ8/view?usp=sharing) (Access is requested). 
 
 ### Development data
