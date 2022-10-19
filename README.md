@@ -25,8 +25,8 @@ pip install -e .
 
 ## Usage
 ### Training data
-We use the training data from [back-translation NLI](https://drive.google.com/file/d/1HeqsEChDr7i_kxbdJvmVaRMSFKDRnFBY/view?usp=sharing)
-and multilingual we use the training data from [BSL](https://drive.google.com/file/d/19O2NArJz_RlVNNGRbBnnWxNMW-7HaFZ8/view?usp=sharing) (Access is requested). 
+We use the training data from [BSL's paper](https://aclanthology.org/2021.acl-long.402.pdf): [monolingual version](https://drive.google.com/file/d/1HeqsEChDr7i_kxbdJvmVaRMSFKDRnFBY/view?usp=sharing)
+and [multilingual version](https://drive.google.com/file/d/19O2NArJz_RlVNNGRbBnnWxNMW-7HaFZ8/view?usp=sharing). 
 
 ### Development data
 We use sts-b development set from [sentence transformer](https://sbert.net/datasets/stsbenchmark.tsv.gz).
