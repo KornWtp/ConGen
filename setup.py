@@ -18,6 +18,5 @@ setup(
         "torch==1.8.1",
         "transformers==4.9.0",
         "sentence-transformers==2.0.0",
-        "pandas==1.4.1",
     ],
 )
