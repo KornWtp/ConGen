@@ -354,3 +354,44 @@ In our paper, we average score over three models and shown as follows:
   </tr>
 </tbody>
 </table>
+
+## We have Thai version models 
+- [ConGen-simcse-model-roberta-base-thai](https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai)
+- [ConGen-paraphrase-multilingual-mpnet-base-v2](https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2/tree/main)
+
+- First model we use teacher is [simcse-model-roberta-base-thai](https://huggingface.co/mrp/simcse-model-roberta-base-thai) and student is [WangchanBERTa](https://huggingface.co/airesearch/wangchanberta-base-att-spm-uncased)
+- Second model we use teacher is [paraphrase-multilingual-mpnet-base-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2) and student is [WangchanBERTa](https://huggingface.co/airesearch/wangchanberta-base-att-spm-uncased)
+- Training data: we backtranslate [scb_mt_enth_2020](https://huggingface.co/datasets/scb_mt_enth_2020) from TH-to-EN-to-TH, [back translated machine translation of SCB](https://drive.google.com/file/d/1u7kCk9xpTfQkxpJ0zfILpo9SR5KNMfaj/view?usp=share_link)
+- We evaluate two task consist of [Thai semantic textual similarity benchmark](https://github.com/mrpeerat/Thai-Sentence-Vector-Benchmark#thai-semantic-textual-similarity-benchmark) and [Thai transfer benchmark](https://github.com/mrpeerat/Thai-Sentence-Vector-Benchmark#thai-transfer-benchmark)
+
+### Parameters
+| Models  | Teacher Temp | Student Temp | Queue Size | Learning Rate |   
+| --------------------- | ----- | ----- | -----| ----|
+|simcse-model-roberta-base-thai             | 0.05  | 0.03  | 65536| 3e-4|
+|ConGen-paraphrase-multilingual-mpnet-base-v2             | 0.05  | 0.05  | 262144| 1e-4| 
+
+### Thai semantic textual similarity benchmark
+| Base Model  | Spearman's Correlation (*100) | Supervised? |
+| ------------- | :-------------: | :-------------: |
+| [ConGen-simcse-model-roberta-base-thai](https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai)  | 66.21  |
+| [ConGen-paraphrase-multilingual-mpnet-base-v2](https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2/tree/main)  | 76.56  | :heavy_check_mark:
+
+### Thai transfer benchmark
+
+#### Wisesight
+| Base Model  | Acc (*100) | F1 (*100, weighted) | Supervised? |
+| ------------- | :-------------: | :-------------: | :-------------: |
+| [ConGen-simcse-model-roberta-base-thai](https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai)  | 65.07  | 65.28  |
+| [ConGen-paraphrase-multilingual-mpnet-base-v2](https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2/tree/main)  | 67.84  | 68.31  | :heavy_check_mark:
+
+#### Wongnai
+| Base Model  | Acc (*100) | F1 (*100, weighted) | Supervised? |
+| ------------- | :-------------: | :-------------: | :-------------: |
+| [ConGen-simcse-model-roberta-base-thai](https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai)  | 41.32  | 41.57 |
+| [ConGen-paraphrase-multilingual-mpnet-base-v2](https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2/tree/main)  | 47.22  | 48.63  | :heavy_check_mark:
+
+#### Generated Review
+| Base Model  | Acc (*100) | F1 (*100, weighted) | Supervised? |
+| ------------- | :-------------: | :-------------: | :-------------: |
+| [ConGen-simcse-model-roberta-base-thai](https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai)  | 49.81  | 47.94 |
+| [ConGen-paraphrase-multilingual-mpnet-base-v2](https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2/tree/main)  | 58.00 | 56.80  | :heavy_check_mark:
