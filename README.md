@@ -366,7 +366,7 @@ In our paper, we average score over three models and shown as follows:
 
 ### Parameters
 | Models  | Teacher Temp | Student Temp | Queue Size | Learning Rate |   
-| --------------------- | ----- | ----- | -----| ----|
+| ------------------------------- | ----- | ----- | -----| ----|
 |simcse-model-roberta-base-thai             | 0.05  | 0.03  | 65536| 3e-4|
 |ConGen-paraphrase-multilingual-mpnet-base-v2             | 0.05  | 0.05  | 262144| 1e-4| 
 
