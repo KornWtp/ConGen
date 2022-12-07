@@ -356,19 +356,16 @@ In our paper, we average score over three models and shown as follows:
 </table>
 
 ## We have Thai version models 
-- [ConGen-simcse-model-roberta-base-thai](https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai)
-- [ConGen-paraphrase-multilingual-mpnet-base-v2](https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2/tree/main)
-
-- First model we use teacher is [simcse-model-roberta-base-thai](https://huggingface.co/mrp/simcse-model-roberta-base-thai) and student is [WangchanBERTa](https://huggingface.co/airesearch/wangchanberta-base-att-spm-uncased)
-- Second model we use teacher is [paraphrase-multilingual-mpnet-base-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2) and student is [WangchanBERTa](https://huggingface.co/airesearch/wangchanberta-base-att-spm-uncased)
+- [ConGen-simcse-model-roberta-base-thai](https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai) use teacher is [simcse-model-roberta-base-thai](https://huggingface.co/mrp/simcse-model-roberta-base-thai) and student is [WangchanBERTa](https://huggingface.co/airesearch/wangchanberta-base-att-spm-uncased)
+- [ConGen-paraphrase-multilingual-mpnet-base-v2](https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2/tree/main) use teacher is [paraphrase-multilingual-mpnet-base-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2) and student is [WangchanBERTa](https://huggingface.co/airesearch/wangchanberta-base-att-spm-uncased)
 - Training data: we backtranslate [scb_mt_enth_2020](https://huggingface.co/datasets/scb_mt_enth_2020) from TH-to-EN-to-TH, [back translated machine translation of SCB](https://drive.google.com/file/d/1u7kCk9xpTfQkxpJ0zfILpo9SR5KNMfaj/view?usp=share_link)
 - We evaluate two task consist of [Thai semantic textual similarity benchmark](https://github.com/mrpeerat/Thai-Sentence-Vector-Benchmark#thai-semantic-textual-similarity-benchmark) and [Thai transfer benchmark](https://github.com/mrpeerat/Thai-Sentence-Vector-Benchmark#thai-transfer-benchmark)
 
 ### Parameters
 | Models  | Teacher Temp | Student Temp | Queue Size | Learning Rate |   
 | ------------------------------- | ----- | ----- | -----| ----|
-|simcse-model-roberta-base-thai             | 0.05  | 0.03  | 65536| 3e-4|
-|ConGen-paraphrase-multilingual-mpnet-base-v2             | 0.05  | 0.05  | 262144| 1e-4| 
+|simcse-model-roberta-base-thai                 | 0.05  | 0.03  | 65536| 3e-4|
+|ConGen-paraphrase-multilingual-mpnet-base-v2               | 0.05  | 0.05  | 262144| 1e-4| 
 
 ### Thai semantic textual similarity benchmark
 | Base Model  | Spearman's Correlation (*100) | Supervised? |
