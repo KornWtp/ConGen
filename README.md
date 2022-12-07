@@ -369,7 +369,7 @@ In our paper, we average score over three models and shown as follows:
 
 ## Thai semantic textual similarity benchmark
 | Base Model  | Spearman's Correlation (*100) |
-| ------------- | :-------------: | :-------------: |
+| ------------- | :-------------: |
 | [ConGen-simcse-model-roberta-base-thai](https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai)  | 66.21  |
 | [ConGen-paraphrase-multilingual-mpnet-base-v2](https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2/tree/main)  | 76.56  |
 
