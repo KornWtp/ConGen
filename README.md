@@ -230,7 +230,7 @@ In our paper, we average score over three models and shown as follows:
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-7btt">Model</th>
+    <th class="tg-7btt">Models</th>
     <th class="tg-7btt">STS-12</th>
     <th class="tg-7btt"><span style="font-style:normal">STS-13</span></th>
     <th class="tg-7btt"><span style="font-style:normal">STS-14</span></th>
@@ -368,7 +368,7 @@ In our paper, we average score over three models and shown as follows:
 |ConGen-paraphrase-multilingual-mpnet-base-v2             | 0.05  | 0.05  | 262144| 1e-4| 
 
 ## Thai semantic textual similarity benchmark
-| Base Model  | Spearman's Correlation (*100) |
+| Models  | Spearman's Correlation (*100) |
 | ------------- | :-------------: |
 | [ConGen-simcse-model-roberta-base-thai](https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai)  | 66.21  |
 | [ConGen-paraphrase-multilingual-mpnet-base-v2](https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2/tree/main)  | 76.56  |
@@ -376,19 +376,19 @@ In our paper, we average score over three models and shown as follows:
 ## Thai transfer benchmark
 
 ### Wisesight
-| Base Model  | Acc (*100) | F1 (*100, weighted) |
+| Models  | Acc (*100) | F1 (*100, weighted) |
 | ------------- | :-------------: | :-------------: |
 | [ConGen-simcse-model-roberta-base-thai](https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai)  | 65.07  | 65.28  |
 | [ConGen-paraphrase-multilingual-mpnet-base-v2](https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2/tree/main)  | 67.84  | 68.31  |
 
 ### Wongnai
-| Base Model  | Acc (*100) | F1 (*100, weighted) |
+| Models  | Acc (*100) | F1 (*100, weighted) |
 | ------------- | :-------------: | :-------------: |
 | [ConGen-simcse-model-roberta-base-thai](https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai)  | 41.32  | 41.57 |
 | [ConGen-paraphrase-multilingual-mpnet-base-v2](https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2/tree/main)  | 47.22  | 48.63  |
 
 ### Generated Review
-| Base Model  | Acc (*100) | F1 (*100, weighted) |
+| Models  | Acc (*100) | F1 (*100, weighted) |
 | ------------- | :-------------: | :-------------: |
 | [ConGen-simcse-model-roberta-base-thai](https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai)  | 49.81  | 47.94 |
 | [ConGen-paraphrase-multilingual-mpnet-base-v2](https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2/tree/main)  | 58.00 | 56.80  |
