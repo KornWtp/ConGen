@@ -1,6 +1,21 @@
 # ConGen
 Implementation of [ConGen: Unsupervised Control and Generalization Distillation For Sentence Representation (Finding of EMNLP 2022)](https://github.com/KornWtp/ConGen/blob/main/ConGen__Unsupervised_Control_and_Generalization_Distillation_For_Sentence_Representation.pdf).
 
+## Citation
+```
+@inproceedings{limkonchotiwat-etal-2022-congen,
+    title = "{ConGen}: Unsupervised Control and Generalization Distillation For Sentence Representation",
+    author = "Limkonchotiwat, Peerat  and
+      Ponwitayarat, Wuttikorn  and
+      Lowphansirikul, Lalita and
+      Udomcharoenchaikit, Can  and
+      Chuangsuwanich, Ekapol  and
+      Nutanong, Sarana",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2022",
+    year = "2022",
+    publisher = "Association for Computational Linguistics",
+}
+```
 
 ## Installation
 ```
