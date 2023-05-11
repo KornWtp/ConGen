@@ -377,12 +377,6 @@ In our paper, we average score over three models and shown as follows:
 - We evaluate on two task benchmark tasks, such as [Thai semantic textual similarity benchmark](https://github.com/mrpeerat/Thai-Sentence-Vector-Benchmark#thai-semantic-textual-similarity-benchmark) and [Thai transfer benchmark](https://github.com/mrpeerat/Thai-Sentence-Vector-Benchmark#thai-transfer-benchmark)
 
 ## Hyper-Parameters
-| Parameters | Models| Teacher Temp | Student Temp | Queue Size | Learning Rate |    
-| ----- | ------------------------------- | ----- | ----- | -----| ----|
-|<30M   |ConGen-WangchanBERT-Tiny             | 0.01  | 0.01  | 65536| 3e-4|
-|^|ConGen-WangchanBERT-Small             | 0.05  | 0.09  | 65536| 5e-4|
-|>100M  |simcse-model-roberta-base-thai             | 0.05  | 0.03  | 65536| 3e-4|
-|^|ConGen-paraphrase-multilingual-mpnet-base-v2             | 0.05  | 0.05  | 262144| 1e-4|
 
 <table>
     <thead>
@@ -398,14 +392,14 @@ In our paper, we average score over three models and shown as follows:
     <tbody>
         <tr>
             <td rowspan=2><30M</td>
-            <td href="https://huggingface.co/kornwtp/ConGen-WangchanBERT-Tiny">ConGen-WangchanBERT-Tiny</td>
+            <td><a href="https://huggingface.co/kornwtp/ConGen-WangchanBERT-Tiny">ConGen-WangchanBERT-Tiny</a></td>
             <td>0.01</td>
             <td>0.01</td>
             <td>65536</td>
             <td>3e-4</td>
         </tr>
         <tr>
-            <td href="https://huggingface.co/kornwtp/ConGen-WangchanBERT-Small">ConGen-WangchanBERT-Small</td>
+            <td><a href="https://huggingface.co/kornwtp/ConGen-WangchanBERT-Small">ConGen-WangchanBERT-Small</a></td>
             <td>0.05</td>
             <td>0.09</td>
             <td>65536</td>
@@ -413,14 +407,14 @@ In our paper, we average score over three models and shown as follows:
         </tr>
         <tr>
             <td rowspan=2>>100M</td>
-            <td href="https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai">ConGen-simcse-model-roberta-base-thai</td>
+            <td><a href="https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai">ConGen-simcse-model-roberta-base-thai</a></td>
             <td>0.05</td>
             <td>0.03</td>
             <td>65536</td>
             <td>3e-4</td>
         </tr>
         <tr>
-            <td href="https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2">ConGen-paraphrase-multilingual-mpnet-base-v2</td>
+            <td><a href="https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2">ConGen-paraphrase-multilingual-mpnet-base-v2</a></td>
             <td>0.05</td>
             <td>0.05</td>
             <td>262144</td>
