@@ -393,7 +393,7 @@ In our paper, we average score over three models and shown as follows:
         <tr>
             <td rowspan=2><30M</td>
             <td><a href="https://huggingface.co/kornwtp/ConGen-WangchanBERT-Tiny">ConGen-WangchanBERT-Tiny</a></td>
-            <td> align="center"0.01</td>
+            <td align="center"> 0.01</td>
             <td align="center">0.01</td>
             <td align="center">65536</td>
             <td align="center">3e-4</td>
