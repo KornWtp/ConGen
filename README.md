@@ -384,6 +384,51 @@ In our paper, we average score over three models and shown as follows:
 |>100M  |simcse-model-roberta-base-thai             | 0.05  | 0.03  | 65536| 3e-4|
 |^|ConGen-paraphrase-multilingual-mpnet-base-v2             | 0.05  | 0.05  | 262144| 1e-4|
 
+<table>
+    <thead>
+        <tr>
+            <th>Parameters</th>
+            <th>Models</th>
+            <th>Teacher Temp</th>
+            <th>Student Temp</th>
+            <th>Queue Size</th>
+            <th>Learning Rate</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2><30M</td>
+            <td href="https://huggingface.co/kornwtp/ConGen-WangchanBERT-Tiny">ConGen-WangchanBERT-Tiny</td>
+            <td>0.01</td>
+            <td>0.01</td>
+            <td>65536</td>
+            <td>3e-4</td>
+        </tr>
+        <tr>
+            <td href="https://huggingface.co/kornwtp/ConGen-WangchanBERT-Small">ConGen-WangchanBERT-Small</td>
+            <td>0.05</td>
+            <td>0.09</td>
+            <td>65536</td>
+            <td>5e-4</td>
+        </tr>
+        <tr>
+            <td rowspan=2>>100M</td>
+            <td href="https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai">ConGen-simcse-model-roberta-base-thai</td>
+            <td>0.05</td>
+            <td>0.03</td>
+            <td>65536</td>
+            <td>3e-4</td>
+        </tr>
+        <tr>
+            <td href="https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2">ConGen-paraphrase-multilingual-mpnet-base-v2</td>
+            <td>0.05</td>
+            <td>0.05</td>
+            <td>262144</td>
+            <td>1e-4</td>
+        </tr>
+    </tbody>
+</table>
+
 
 ## Thai semantic textual similarity benchmark
 | Models  | Spearman's Correlation (*100) |
