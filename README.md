@@ -425,6 +425,37 @@ In our paper, we average score over three models and shown as follows:
 
 
 ## Thai semantic textual similarity benchmark
+
+<table>
+    <thead>
+        <tr>
+            <th>Parameters</th>
+            <th>Models</th>
+            <th>Spearman's Correlation (*100)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2><30M</td>
+            <td><a href="https://huggingface.co/kornwtp/ConGen-WangchanBERT-Tiny">ConGen-WangchanBERT-Tiny</a></td>
+            <td>66.43</td>
+        </tr>
+        <tr>
+            <td><a href="https://huggingface.co/kornwtp/ConGen-WangchanBERT-Small">ConGen-WangchanBERT-Small</a></td>
+            <td>70.65</td>
+        </tr>
+        <tr>
+            <td rowspan=2>>100M</td>
+            <td><a href="https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai">ConGen-simcse-model-roberta-base-thai</a></td>
+            <td>66.21</td>
+        </tr>
+        <tr>
+            <td><a href="https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2">ConGen-paraphrase-multilingual-mpnet-base-v2</a></td>
+            <td>76.56</td>
+        </tr>
+    </tbody>
+</table>
+
 | Models  | Spearman's Correlation (*100) |
 | ------------- | :-------------: |
 | [ConGen-simcse-model-roberta-base-thai](https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai)  | 66.21  |
