@@ -377,10 +377,13 @@ In our paper, we average score over three models and shown as follows:
 - We evaluate on two task benchmark tasks, such as [Thai semantic textual similarity benchmark](https://github.com/mrpeerat/Thai-Sentence-Vector-Benchmark#thai-semantic-textual-similarity-benchmark) and [Thai transfer benchmark](https://github.com/mrpeerat/Thai-Sentence-Vector-Benchmark#thai-transfer-benchmark)
 
 ## Hyper-Parameters
-| Models  | Teacher Temp | Student Temp | Queue Size | Learning Rate |   
-| ------------------------------- | ----- | ----- | -----| ----|
-|simcse-model-roberta-base-thai             | 0.05  | 0.03  | 65536| 3e-4|
-|ConGen-paraphrase-multilingual-mpnet-base-v2             | 0.05  | 0.05  | 262144| 1e-4| 
+| Parameters | Models| Teacher Temp | Student Temp | Queue Size | Learning Rate |    
+| ----- | ------------------------------- | ----- | ----- | -----| ----|
+|<30M   |ConGen-WangchanBERT-Tiny             | 0.01  | 0.01  | 65536| 3e-4|
+|^|ConGen-WangchanBERT-Small             | 0.05  | 0.09  | 65536| 5e-4|
+|>100M  |simcse-model-roberta-base-thai             | 0.05  | 0.03  | 65536| 3e-4|
+|^|ConGen-paraphrase-multilingual-mpnet-base-v2             | 0.05  | 0.05  | 262144| 1e-4|
+
 
 ## Thai semantic textual similarity benchmark
 | Models  | Spearman's Correlation (*100) |
