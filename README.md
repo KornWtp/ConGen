@@ -459,6 +459,7 @@ In our paper, we average score over three models and shown as follows:
 ## Thai transfer benchmark
 
 ### Wisesight
+
 <table>
     <thead>
         <tr>
@@ -491,16 +492,79 @@ In our paper, we average score over three models and shown as follows:
             <td align="center">67.84</td>
             <td align="center">68.31</td>
         </tr>
-    </tbo
+    </tbody>
+</table>
 
 ### Wongnai
-| Models  | Acc (*100) | F1 (*100, weighted) |
-| ------------- | :-------------: | :-------------: |
-| [ConGen-simcse-model-roberta-base-thai](https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai)  | 41.32  | 41.57 |
-| [ConGen-paraphrase-multilingual-mpnet-base-v2](https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2/tree/main)  | 47.22  | 48.63  |
+
+<table>
+    <thead>
+        <tr>
+            <th>Parameters</th>
+            <th>Models</th>
+            <th>Acc (*100)</th>
+            <th>F1 (*100, weighted)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2><30M</td>
+            <td><a href="https://huggingface.co/kornwtp/ConGen-WangchanBERT-Tiny">ConGen-WangchanBERT-Tiny</a></td>
+            <td align="center">42.67</td>
+            <td align="center">44.78</td>
+        </tr>
+        <tr>
+            <td><a href="https://huggingface.co/kornwtp/ConGen-WangchanBERT-Small">ConGen-WangchanBERT-Small</a></td>
+            <td align="center">43.38</td>
+            <td align="center">45.99</td>
+        </tr>
+        <tr>
+            <td rowspan=2>>100M</td>
+            <td><a href="https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai">ConGen-simcse-model-roberta-base-thai</a></td>
+            <td align="center">41.32</td>
+            <td align="center">41.57</td>
+        </tr>
+        <tr>
+            <td><a href="https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2">ConGen-paraphrase-multilingual-mpnet-base-v2</a></td>
+            <td align="center">47.22</td>
+            <td align="center">48.63</td>
+        </tr>
+    </tbody>
+</table>
 
 ### Generated Review
-| Models  | Acc (*100) | F1 (*100, weighted) |
-| ------------- | :-------------: | :-------------: |
-| [ConGen-simcse-model-roberta-base-thai](https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai)  | 49.81  | 47.94 |
-| [ConGen-paraphrase-multilingual-mpnet-base-v2](https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2/tree/main)  | 58.00 | 56.80  |
+
+<table>
+    <thead>
+        <tr>
+            <th>Parameters</th>
+            <th>Models</th>
+            <th>Acc (*100)</th>
+            <th>F1 (*100, weighted)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2><30M</td>
+            <td><a href="https://huggingface.co/kornwtp/ConGen-WangchanBERT-Tiny">ConGen-WangchanBERT-Tiny</a></td>
+            <td align="center">54.26</td>
+            <td align="center">52.69</td>
+        </tr>
+        <tr>
+            <td><a href="https://huggingface.co/kornwtp/ConGen-WangchanBERT-Small">ConGen-WangchanBERT-Small</a></td>
+            <td align="center">58.22</td>
+            <td align="center">57.03</td>
+        </tr>
+        <tr>
+            <td rowspan=2>>100M</td>
+            <td><a href="https://huggingface.co/kornwtp/ConGen-simcse-model-roberta-base-thai">ConGen-simcse-model-roberta-base-thai</a></td>
+            <td align="center">49.81</td>
+            <td align="center">47.94</td>
+        </tr>
+        <tr>
+            <td><a href="https://huggingface.co/kornwtp/ConGen-paraphrase-multilingual-mpnet-base-v2">ConGen-paraphrase-multilingual-mpnet-base-v2</a></td>
+            <td align="center">58.00</td>
+            <td align="center">56.80</td>
+        </tr>
+    </tbody>
+</table>
