@@ -17,7 +17,7 @@ Implementation of [ConGen: Unsupervised Control and Generalization Distillation 
 }
 ```
 
-## Annoucement
+## Announcement (2023)
 - We have a new version of ConGen: [SCT](https://github.com/mrpeerat/SCT/tree/main) (published at TACL2023).
 - The SCT method outperforms ConGen on distillation settings.
 - This method is also effective for a small model to learn sentence embedding without the teacher model!  
