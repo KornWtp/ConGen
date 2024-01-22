@@ -15,7 +15,7 @@ setup(
     long_description_content_type="text/markdown",
     packages=find_packages(),
     install_requires=[
-        "torch==1.8.1",
+        "torch==2.0.1",
         "transformers==4.9.0",
         "sentence-transformers==2.0.0",
     ],
